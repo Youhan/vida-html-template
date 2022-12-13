@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML markups - Termé</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <script src="assets/js/jquery.js"></script> 
+    <script>
+            
+            $(document).ready(function(){
+                
+                $('pre').each(function(){
+                   var $pre = $(this);
+                   $pre.addClass('prettyprint linenums');
+                   $pre.html($pre.html().replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+                });
+            });
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <div class="motive">
+      <h4>Your review matters!</h4>
+      <p>Would you please let us know what you think about Vida?</p>
+      <img src="assets/img/stars.png" alt="">
+      <a href="http://themeforest.net/downloads" target="_blank" class="btn btn-info btn-lg">Sure :)</a>
+    </div>
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          
+          <div class="nav-collapse collapse">
+             <ul class="nav">
+              <li >
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="active">
+                <a href="./html.html">HTML Markup </a>
+              </li>
+              <li >
+                <a href="./howto.html">How to questions </a>
+              </li>
+              <li>
+                <a href="./css.html">Custom skins</a>
+              </li >
+        <li>
+                <a href="./plugins.html">Javascript plugins </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h2>HTML Markups</h2>
+    <p class="lead">Learn how to add/edit elements markups</p>
+  </div>
+</header>
+
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav affix">
+          <li><a href="#basics"><i class="icon-chevron-right"></i>Template main layout </a></li>
+          <li><a href="#pages1"><i class="icon-chevron-right"></i>Pages </a></li>
+          <li><a href="#pages2"><i class="icon-chevron-right"></i>Navigation menu</a></li>
+          <li><a href="#pages3"><i class="icon-chevron-right"></i>Headings</a></li>
+          <li><a href="#pages4"><i class="icon-chevron-right"></i>Buttons</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+
+
+
+        <!-- Basics
+        ================================================== -->
+        <section id="basics">
+          <div class="page-header">
+			<h2>Template main layout </h2>
+			<strong>This template is using bootstrap 3 css framework so you might wanna take a look at their documentation which is available at <a href="getbootstrap.com/css/">Bootstrap documentation</a>
+          </div>
+		  <p>First lets see how the whole thing stands in term of HTML markup.</p>
+            <pre> 
+  <div id="wrapper">  
+    <div id="container">
+      
+      <!-- Upstream -->
+      <div id="upstream">
+        
+      </div>
+      <!-- Upstream End -->
+      
+      <!-- Contents -->
+      <div id="contents">
+
+
+      </div>
+      <!-- Contents End-->
+    </div>
+
+    <!-- Menu-pannel -->
+    <div id="menu-pannel">
+    </div>
+    <!-- Menu-pannel End -->
+  </div>
+  
+			</pre>
+			<p>
+				We have a <code> wrapper </code> which is acting like a dummy body and contains the whole template. This template is one page so all contents should be in one html file which is <strong>corporate.html</strong> or <strong>personal.html</strong>. 
+			</p>
+      <p>#upstream is a higher level which we used for fullscreen gallery and portfolio and also blog posts.</p>
+      <p>#content is the wrapper of all pages</p>
+      <p>#menu-panel is our navigation menu</p>
+       </section>
+       
+       <section id="pages1">
+          <div class="page-header">
+            <h2>Pages</h2>
+          </div>
+            <p>Each page is a swiper section wrapped inside #swiper-wrapper.Let's take a look at the markup</p>
+			<pre>
+
+        <!-- Pages -->
+        <div id="swiper-content">
+          <div class="swiper-wrapper">
+            <div id ="home" class="sub-page swiper-slide" data-hash="hello">
+            </div>
+
+            <div class="sub-page swiper-slide" data-hash="grid-portfolio">
+            </div>
+            
+            <div class="sub-page reverse swiper-slide" data-hash="grid-gallery">
+            </div>
+
+            <div class="sub-page swiper-slide" data-hash="our-team">
+            </div>
+
+            <div class="sub-page swiper-slide" data-hash="blog">
+            </div>
+
+            <div class="sub-page swiper-slide" data-hash="contact-us">
+            </div>
+
+          </div>
+        </div>
+        <!-- Pages End -->
+			</pre>
+			<p>
+      Each Page is a div with the class of <code>sub-page swiper-slide</code> which is an identifier for swiper.<strong>Important</strong> Attribute is <code>data-hash </code> which will be used for menu navigation.
+			</p>
+
+			<h3>Inner sections</h3>
+			<p>Generally a page has sidebar and main section.Here is the markup:</p>
+<pre>
+ <div class="sub-page swiper-slide" data-hash="grid-portfolio">                
+  <div class="page-side scrollbar">
+  </div>
+
+  <div class="page-container">
+  </div>
+</div>
+
+</pre>
+<p>As you can see there is <code>div</code> with class <code>.page-side</code> and also and a <code>div</code> with class <code>page-container</code><strong>scrollbar class apply the custom scroll bar to any elements that we need</strong></p>
+<p>By default all side bar are in left position but if you need to have a right sidebar like in grid-gallery, All you need to do is adding a class <code>reverse</code> to sub page wrapper. here is the markup:</p>
+<pre>
+  <div class="sub-page reverse swiper-slide" data-hash="grid-gallery">
+                
+    <div class="page-side">
+    </div>
+
+    <div class="page-container">
+    </div>
+  </div>
+</pre>
+<p>The <code>.page-container</code> element is based on page contents but the side bar is almost same in all pages here is our side bar markup:</p>
+<pre>
+<!-- Page side bar -->  
+  <div class="page-side scrollbar">
+    <div class="inner-wrapper scrollbar">
+      <!-- Side bar title --> 
+      <div class="sub-page-title">
+        <h2 class="mycontainer">Page title</h2>
+      </div>
+      <!-- Side bar title --> 
+
+      <!-- Side bar image --> 
+      <img src="Path to page image" class="img-responsive hidden-xs">
+      <!-- /Side bar image -->  
+
+      <!-- Side bar contents -->  
+      <div class="mycontainer hidden-xs">
+        <h3>Some heading</h3>
+        <p>Some description</p>
+      </div>
+      <!-- /Side bar contents --> 
+
+    </div>
+  </div>
+<!-- /Page side bar -->
+</pre>
+       </section>
+
+
+<section id="pages2">
+          <div class="page-header">
+            <h2>Navigation menu</h2>
+          </div>
+         <p>Navigation is a position absolute element hidden under the main page and will be triggered by clicking on menu button. The markup is</p>   
+<pre>
+
+    <!-- Menu-pannel -->
+    <div id="menu-pannel">
+      <div id="menu-pannel-inner">
+        
+        <div id="close-menu">
+          <a></a>
+        </div>
+
+        <div id="menu-pannel-image">
+                  
+        </div>
+
+        <div id="menu-pannel-thumbs">
+        </div>
+
+        <div id="menu-pannel-navigation">
+        </div>
+
+      </div>
+    </div>
+    <!-- Menu-pannel End -->
+</pre>    
+		<p>
+		As you can see our navigation is more than just a list and each item has an image and a title and a subtitle, also there is an menu indicator which is showing active item and also acts as a navigator for menu items.
+
+    </p>
+    <strong>Notice:</strong>You just need to edit <code>#menu-pannel-thumbs</code> element and the rest will be automatically handled by javascipt so let's take a look in to the part that you need to edit:
+		</p>        
+    <pre>
+<!--Menu Items contents-->  
+  <div id="menu-pannel-thumbs">
+
+    <!--Menu Items Carousel-->  
+    <ul id="slider-container">
+      <!--Menu Item-->  
+      <li class="menu-pannel-thumb active">
+        <h2>Home</h2>
+        <h3><span class="digit">01</span>First page of my Website!</h3>
+        <img src="assets/img/menu/m1.jpg" alt="image"/>
+      </li>
+      <!--/Menu Item-->
+
+      <!--Menu Item-->    
+      <li class="menu-pannel-thumb">
+        <h2>Grid Portfolio</h2>
+        <h3><span class="digit">02</span>Our works in a grid</h3>
+        <img src="assets/img/menu/m2.jpg" alt="image"/>
+      </li>
+      <!--/Menu Item--> 
+      ...
+    </ul>
+    <!--/Menu Items Carousel-->
+
+  </div>
+  <!--/Menu Items contents--> 
+    </pre>
+    <p>Each menu item is a <code>li</code> inside the <code>ul</code> with <code>slider-container</code>id and has a title, subtitle and an image. menu title should be entered inside <code>h2</code> tag and the subtitle in <code>h3</code> tag. That 01 number is optional but recommanded for better user experience. finally each menu needs an image which is a simple <code>img</code> tag. To add menu item just copy and paste one of these <code>li</code> and edit it's information.</p>
+    <strong>Notice: The order of menu items should be same as order of pages inside swiper. so the first menu refer to first page and second menu to second page and so on.</strong>
+       </section>
+<section id="pages3">
+          <div class="page-header">
+            <h2>Headings</h2>
+          </div>
+         <p>We have a side bar heading which is same in all pages with side bar. here is the markup</p>
+
+         
+		 
+<pre>
+<div class="sub-page-title">
+  <h2 class="mycontainer">Page Title</h2>
+</div>
+</pre> 
+<p>the rests are either base on page or just a simple <code><h></code>tag</p>           
+<pre>
+       </section>
+
+<section id="pages4">
+          <div class="page-header">
+            <h2>Buttons</h2>
+          </div>
+          <p>
+			The markup of our buttons:
+		  </p>  
+<pre>
+<a class="btn btn-lg btn-theme">Sample button</a>
+</pre>
+		<p>first two classes are belong to bootstrap and the last class is our button style like in vertical portfolio or contact page. Also the <code>.btn-lg</code> class is for the large buttons remove it if you need a small button.</p>
+		<p>
+       </section>
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38170379-1']);
+  _gaq.push(['_setDomainName', 'pyrocms.ir']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+  </body>
+</html>

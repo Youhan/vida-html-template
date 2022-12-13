@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript plugins - Vida Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    
+    
+    
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    
+    <script src="assets/js/jquery.js"></script> 
+    <script>
+            
+            $(document).ready(function(){
+                
+                $('pre').each(function(){
+                   var $pre = $(this);
+                   $pre.addClass('prettyprint linenums');
+                   $pre.html($pre.html().replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+                });
+            });
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <div class="motive">
+      <h4>Your review matters!</h4>
+      <p>Would you please let us know what you think about Vida?</p>
+      <img src="assets/img/stars.png" alt="">
+      <a href="http://themeforest.net/downloads" target="_blank" class="btn btn-info btn-lg">Sure :)</a>
+    </div>
+    
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li >
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./html.html">HTML Markup </a>
+              </li>
+              <li >
+                <a href="./howto.html">How to questions </a>
+              </li>
+              <li>
+                <a href="./css.html">Custom skins</a>
+              </li >
+        <li class="active">
+                <a href="./plugins.html">Javascript plugins </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>Javascript plugins</h1>
+    <p class="lead">What plugin we used in this template?</p>
+  </div>
+</header>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+       <br><br>
+		<p> 
+			There are some plugins mostly jQuery plugins that we used in this template. We would like to thank the authors and also mentioned them and their websites for your information.
+		</p>
+		<ul>
+			<li><a href="http://caroufredsel.dev7studios.com"> Caroufredsel from Dev7studios </li>
+			<li><a href="http://gsgd.co.uk/sandbox/jquery/easing/"> jQuery Easing Plugin from GSGD </li>
+			<li><a href="http://isotope.metafizzy.co/"> Isotope by David DeSandro </li>
+			
+			<li><a href="http://blueimp.github.io/Gallery/"> Blueimp Gallery by Sebastian Tschan </li>
+      <li><a href="http://www.idangero.us/sliders/swiper/"> idangerous swiper by iDangero.us </li>
+      <li><a href="http://jplayer.org/"> jQuery jPlayer by Happyworm Ltd. </li>
+      <li><a href="http://www.appelsiini.net/projects/lazyload"> jQuery Lazy load by  Mika Tuupola </li>
+      <li><a href="http://labs.rampinteractive.co.uk/touchSwipe/demos/"> jQuery touchSwipe by Matt Bryson </li>
+      <li><a href="http://www.willmcgugan.com"> Ken Burns effect JQuery plugin by Will McGugan</li>
+      <li><a href="https://github.com/georgepaterson/jquery-videobackground"> jQuery Video Background by George Paterson</li>
+			<li><a href="https://github.com/brandonaaron/jquery-mousewheel"> jQuery Mousewheel by Brandon Aaron </li>
+			<li><a href="http://www.greensock.com/gsap-js/">GSAP JS from GreenSock </li>
+			<li><a href="https://github.com/mathiasbynens/jquery-placeholder"> jQuery placeholder by Federico Galassi</li>
+			<li><a href="http://www.yuiazu.net/perfect-scrollbar/"> Perfect scrollbar by HyeonJe Jun </li>
+			<li><a href="http://gmap3.net/"> Gmap3  </li>
+      
+      
+		</ul>
+		</div>
+		</div>
+
+  </div>
+
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38170379-1']);
+  _gaq.push(['_setDomainName', 'pyrocms.ir']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+  </body>
+</html>

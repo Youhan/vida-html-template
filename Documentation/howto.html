@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>How to Questions - Vida</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <script src="assets/js/jquery.js"></script> 
+    <script>
+            
+            $(document).ready(function(){
+                
+                $('pre').each(function(){
+                   var $pre = $(this);
+                   $pre.addClass('prettyprint linenums');
+                   $pre.html($pre.html().replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+                });
+            });
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <div class="motive">
+      <h4>Your review matters!</h4>
+      <p>Would you please let us know what you think about Vida?</p>
+      <img src="assets/img/stars.png" alt="">
+      <a href="http://themeforest.net/downloads" target="_blank" class="btn btn-info btn-lg">Sure :)</a>
+    </div>
+    
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          
+          <div class="nav-collapse collapse">
+             <ul class="nav">
+              <li >
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./html.html">HTML Markup </a>
+              </li>
+              <li class="active">
+                <a href="./howto.html">How to questions </a>
+              </li>
+              <li>
+                <a href="./css.html">Custom skins</a>
+              </li >
+        <li>
+                <a href="./plugins.html">Javascript plugins </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h2>How to questions</h2>
+    <p class="lead">Find fast answers to frequently questions</p>
+  </div>
+</header>
+
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav affix">
+          <li><a href="#pages1"><i class="icon-chevron-right"></i>Preloader</a></li>
+          <li><a href="#pages2"><i class="icon-chevron-right"></i>Audio player musics</a></li>
+          <li><a href="#pages3"><i class="icon-chevron-right"></i>Home page introduction</a></li>
+		      <li><a href="#pages4"><i class="icon-chevron-right"></i>Social icons</a></li>
+          <li><a href="#pages5"><i class="icon-chevron-right"></i>Home page video background</a></li>
+          <li><a href="#pages6"><i class="icon-chevron-right"></i>Home page Ken burns slider</a></li>
+    		  <li><a href="#pages7"><i class="icon-chevron-right"></i>Vertical portfolio</a></li>
+    		  <li><a href="#pages8"><i class="icon-chevron-right"></i>Grid Portfolio</a></li>
+    		  <li><a href="#pages9"><i class="icon-chevron-right"></i>Vertical gallery</a></li>
+    		  <li><a href="#pages10"><i class="icon-chevron-right"></i>Horizontal gallery</a></li>
+          <li><a href="#pages11"><i class="icon-chevron-right"></i>Grid gallery</a></li>
+          <li><a href="#pages12"><i class="icon-chevron-right"></i>Blog lists</a></li>
+          <li><a href="#pages13"><i class="icon-chevron-right"></i>About me</a></li>
+          <li><a href="#pages14"><i class="icon-chevron-right"></i>Team members</a></li>
+    		  <li><a href="#pages15"><i class="icon-chevron-right"></i>Google map</a></li>
+    		  <li><a href="#pages16"><i class="icon-chevron-right"></i>Contact details</a></li>
+    		  <li><a href="#pages17"><i class="icon-chevron-right"></i>Contact form</a></li>
+          <li><a href="#pages18"><i class="icon-chevron-right"></i>Updating template</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+
+
+<section id="pages1">
+          <div class="page-header">
+            <h2>How to Edit preloader text</h2>
+            <strong>Line 37 corporate.html and personal.html </strong>
+          </div>
+           <p>The template has a nice preloader and the loading message is a text not an image so you can easily edit it. here is the markup: </p>
+<pre>
+<!-- Preloader -->
+    <div id="preloader">
+        <div id="text-load">
+          <img src="assets/img/logo.png" alt="img">
+            <h2>
+                Vida Photography
+                <span id="load-overlay"></span>
+            </h2>
+        </div>
+        <div id="userguid">
+          <p>Website scrolles horizontally by <img src="assets/img/mouse-drag.png" alt=""> or <img src="assets/img/keyboard-arow.png" alt=""></p>
+          <a class="startbtn">Go</a>    
+
+        </div>
+    </div>
+    <!-- Preloader -->
+
+</pre>
+<p>First part inside the <code>#text-load</code> has an image which is logo and second is the title of your company or your name inside the <code>h2</code> tag. <code>#userguide</code>contains information about navigating throw pages and it is highly recommanded that you keep the keyboard and mouse images for best user experience</p>
+    
+       </section>
+       <section id="pages2">
+          <div class="page-header">
+            <h2>How to Edit/Add music to audio player</h2>
+            <strong>Line 1387 corporate.html and 1166 personal.html</strong>
+          </div>
+           <p>The audio player is using jQuery Jplayer plugin. there is nothing much to do with the HTML markup but here it is in case you need it:</p>
+<pre>
+<!-- Audio player -->
+  <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+  <div id="jp_container_1" class="jp-audio">
+    <div class="jp-type-single">
+      <div class="jp-gui jp-interface">
+        <ul class="jp-controls">
+        
+        <li><a href="javascript:;" class="jp-play" tabindex="1" title="play">
+          <i class="fa fa-play"></i>
+        </a></li>
+        <li><a href="javascript:;" class="jp-pause" tabindex="1" style="display: none;" title="pause">
+          <i class="fa fa-pause"></i>
+        </a></li>
+        ...
+      </ul>
+      </div>
+      <div class="jp-no-solution">
+      </div>
+    </div>
+  </div>
+  <!-- /Audio Player-->
+</pre>
+<strong>So how to add/edit the playlist?</strong>
+<p>audio playlist is handled from javascript file. lets set the folder structure we should have a "music" folder inside "assets" which is containing all audio file in "mp3" format. then to set the playlist open "assets/js/custom.js" file and arround line 999 you should see this:</p>
+<pre>
+  playlistPrepare : function(){
+  as.playlist = new jPlayerPlaylist(
+    {
+      jPlayer: "#jquery_jplayer_1",
+      cssSelectorAncestor: "#jp_container_1"
+    }, 
+    [
+      {
+        title:"Thin Ice",
+        mp3:"assets/music/04.mp3"
+      },
+      {
+        title:"Thin Ice",
+        mp3:"assets/music/00.mp3"
+      },
+      {
+        title:"Thin Ice",
+        mp3:"assets/music/01.mp3"
+      },
+      {
+        title:"Thin Ice",
+        mp3:"assets/music/02.mp3"
+      },
+      {
+        title:"Thin Ice",
+        mp3:"assets/music/03.mp3"
+      }
+    ]
+</pre>
+<p>Each audio file is an object including a title and path to the mp3 file. just add or edit current items.</p>
+       </section>
+<section id="pages3">
+          <div class="page-header">
+            <h2>How to Edit/Add home page introduction</h2>
+            <strong>Lines 74 corporate.html and personal.html</strong>
+          </div>
+           <p>In both corporate and personal version there is a horizontal introduction bar  which is perfect for some basic information like company name and slogan . first lets take a look at slider markup: </p>
+<pre>
+<div id="hello-inner">
+  <div id="hex-container">
+    <div class="hex-wrapper">
+      <div class="hex-1">
+        <div class="hex-2">
+          <div class="hex-3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="hello-contents">
+    <h1>Vida Photography</h1>
+    <h2>Digital Art Agency</h2>
+  </div>
+  <div id="enhancer">
+    <span>Portfolio</span>
+    <i class="fa fa-angle-right"></i>
+  </div>
+</div>
+</pre>
+		<p>First part <code>#hex-container</code> is an image inside a hexagon. The image must be set from "style.css" file so to change it just open "style.css" file in "assets/css" and at line 747 you should see this:
+<pre>
+  
+#hello-inner .hex-3{
+  background: url(../img/person2.jpg) center no-repeat;
+  background-position: 50% 100px;
+}
+</pre>
+		<p>Just change the person2 image path to your image.</p>
+    <p>Second part is <code>#hello-contents</code> we have a title inside <code>h1</code> tag and a slogan inside <code>h2</code> tag</p>
+    <p>Last part is again for better user experience and it's just a link to next page</p>
+<pre>
+       </section>
+
+<section id="pages4">
+          <div class="page-header">
+            <h2>How to Add/Edit Social icons</h2>
+            <strong>Lines 1370 corporate.html and 1149 personal.html</strong>
+          </div>
+          <p>
+		  Our social icons and all other icons are using Font awesome icon package. You can see all available icons in <a href="http://fortawesome.github.io/Font-Awesome/icons/">here</a>.
+		  </p> 
+		  <p>Lets take a look at markup</p> 
+<pre>
+<ul id="socialicons">
+  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+  <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+</ul>
+</pre>
+		<p>
+		Each <code>li</code> is a social icon and its containing an icon with a<code>i</code> tag . all you need to do here is just change <code>href</code> of <code>a</code> element and enter your social home page url.
+		</p>
+		<p><strong>you can change icons by changing the class name</strong> and also to add a new icon just copy and paste one <code>li</code> and edit the <code>href</code> and <code>i</code> tag class name</p>
+</section>
+
+
+<section id="pages5">
+          <div class="page-header">
+            <h2>How to edit home page video background</h2>
+            <strong>Lines 574 custom.js</strong>
+          </div>
+          <p>
+          In corporate version we used a full screen video background for home page. there is no extra html markup and it has been handled from javascript. 
+
+          
+		  </p>
+      <p>First let's see the folder structure inside "assets" folder you will find a "video" folder. create a new folder inside "video" folder and give it a name let's say "myvideo" then add your video file to this folder. You need 3 format of your video for run in different browsers("mp4","ogv" and "webm") and give all of them a same name like myvideo. Additionally you need to add a single image with the same name for callback if video failed</p>
+      <p>Ok now we have our files let's get to javascript. Open "custom.js" file inside "assets/js" and arround line 574 you should see this:</p>  
+<pre>
+/* home video background
+----------------------------------------------*/
+var vs, videoBackground = {
+  settings : {
+    videoName : 'goldpai/goldpai',
+  },
+</pre>
+<p>Just change the video name to "myvideo/myvideo". first one is folder name and second one is file name.
+</section>
+<section id="pages6">
+          <div class="page-header">
+            <h2>How to add/edit home page Ken burns slider</h2>
+            <strong>Line 79 personal.html</strong>
+          </div>
+          <p>
+          In personal version we used a full screen Ken burns slider for home page. there is a simple html markup and most of it is  handled from javascript. Here is the markup:
+
+          
+      </p>
+<pre>
+<!-- Kenburn Slider -->
+<div id="kb-container">
+</div>
+<!-- /Kenburn Slider -->
+</pre>
+
+<p>Put this markup wherever you need the slider.
+</p> 
+</section>
+<section id="pages7">
+          <div class="page-header">
+            <h2>How to add/edit vertical portfolio</h2>
+            <strong>Line 154 personal.html</strong>
+          </div>
+          <p>
+		vertical portfolio is the second page in personal version. here we have a list of projects each one contains a cover image and some information. here is the general markup:
+		  </p>  
+<pre>
+<!--Vertival Portfolio Wrapper-->
+<div class="vertical-portfolio">
+  <!--Portfolio item-->
+  <div class="portfolio-item row">  
+  </div>  
+  <!--/Portfolio item-->  
+
+  <!--Portfolio item-->
+  <div class="portfolio-item row">
+  </div>
+  <!--/Portfolio item-->
+  ...
+</div>
+<!--Vertival Portfolio Wrapper-->
+</pre>
+
+<p>As you see each item needs the class <code>portfolio-item row</code></p>
+<p>Ok now let's take a look at one of this portfolio items markup:</p>
+<pre>
+  <!--Portfolio item-->
+  <div class="portfolio-item row">
+    <div class="item-image col-md-8">
+      <img src="assets/img/portfolio/cover05.jpg" alt="" class="img-responsive">
+    </div>
+
+    <div class="item-info col-md-4">
+      <div class="inner-wrapper">
+        <h3 class="title">Title</h3>
+        <ul class="list-items">
+          <li>
+            <div class="list-label">Customer</div>
+            <div class="list-des">owwwlab Inc.</div>
+          </li>
+          <li>
+            <div class="list-label">Date</div>
+            <div class="list-des">Nov 2013</div>
+          </li>
+          ...
+        </ul>
+        <p class="item-description">Project description</p>
+        <a href="ajax_pages/portfolio-item.html" class="btn btn-lg btn-theme pull-right ajax-portfolio"><i class="fa fa-arrow-circle-o-up"></i>View</a>
+      </div>
+    </div>  
+  </div>  
+  <!--/Portfolio item-->
+</pre>
+<p>First <code>div</code> with <code>col-md-8</code> class is image wrapper just edit the <code>src</code> attribute to your image path</p>
+<p>Second part is containing a title inside <code>h3</code> tag and a list of project details. Each list item must have a <code>list-label</code> and a <code>list-des</code> for label and description. also you can have a description paragraph inside <code>.item-description</code> <code>p</code> tag</p>
+
+<p>For information about single portfolio item in upstream read next section.</p>
+
+</section>
+
+<section id="pages8">
+          <div class="page-header">
+            <h2>How to add/edit Grid Portfolio</h2>
+            <strong>Line 141 corporate.html</strong>
+          </div>
+          <p>
+    Grid portfolio is the second page in corporate version. here we have a grid list of projects, each one has two option. First a simple image and second a local video.
+      </p>
+      <p>First let's take a look at a portfolio item with simple image:</p>
+      <pre>
+<!-- Portflio Item -->    
+  <div class="gp-item da-item">
+    <a href="ajax_pages/portfolio-item.html" class="ajax-portfolio normal">
+      <img src="assets/img/portfolio/cover10.jpg" alt="alt" class="img-responsive">
+      <!-- Item Overlay --> 
+      <div class="info da-overlay">
+        <div class="centerit">
+          <h3>365 Days</h3>
+          <p>This is a regular photo gallery showcase</p>
+        </div>
+      </div>
+      <!-- /Item Overlay -->  
+    </a>
+  </div>
+  <!-- /Portflio Item --> 
+      </pre>
+      <p>As you see each item includes two part. first one is a link with a href to single portfolio. second is the overlay and will be activated when use mouse over the item.<strong>The important property here is <code>a</code> tag href which should be the url of single portfolio post. we will make an ajax call then and fetch portfolio single and show it in upstream level.</strong></p>
+      <p>The rest is clear just add you image and title and subtitle</p>
+      <h3>Video item in grid portfolio</h3>
+      <p>In our demo version we have one item with video instead of a single image. here is the markup for that item:</p>
+      <pre>
+        
+<!-- Portflio Item -->  
+<div class="gp-item da-item">
+  <!-- Item Video --> 
+  <a href="ajax_pages/portfolio-item-vimeo.html" class="ajax-portfolio video-item normal videofolio" data-filename="susanna/susanna">
+    
+  </a>
+  <!-- /Item Video -->  
+
+  <!-- Item Overlay -->
+  Same as previous markup
+  <!-- /Item Overlay -->  
+</div>
+<!-- /Portflio Item -->
+      </pre>
+      <p>OK it's pretty much like simple item just we don't have any <code>img</code> tag. <strong><code>.videofolio</code> class stands for a video item and <code>data-filename</code> property is telling us the address and name of the video file. </strong>like the one we had in home page so in this example we have a "susanna" folder inside "video/assets" and a video file named "susanna" with three format "mp4", "webm" and "ogv"</code></p>
+
+      <p><strong>By clicking on each portfolio items</strong>, we will have an upstream level which is acting like our lightbox. There are three different options in upstream level:</p>
+      <ul>
+        <li>1- Simple image gallery</li>
+        <li>2- Vimeo video </li>
+        <li>3- YouTube video</li>
+      </ul>
+      <h4>1-Simple image gallery</h4>
+      <p>In "ajax_pages" folder you will find 3 portfolio single post. lets take a look in to "portfolio-item.html":</p>
+
+      <strong>Don't forget to test it on your localhost or server, ajax requests need a server to run properly</strong>
+      <pre>
+<div id="portfolio-gallery">
+</div>
+<div class="portfolio-container">
+  <div class="portfolio-main col-md-9"> 
+  </div>
+  <div class="portfolio-side col-md-3">
+  </div>
+</div>
+      </pre>
+      <p><code>#portfolio-gallery</code> contains gallery images. <code>.col-md-3</code> is the side bar of portfolio if you don't need it just remove the whole <code>div</code>  with this class and also remove <code>col-md-9</code> class from second element.</p>
+<pre>
+<h5>Portfolio Side bar</h5>
+<p>Side bar contains project title and information and also comments. here is the markup:</p>
+<pre>
+  <div class="portfolio-side col-md-3">
+    <a class="upstreamclose"></a>
+    <div class="ps-wrapper">
+      <div class="head">
+      </div>
+      <div class="portfolio-comments-form">
+      </div>
+      <div class="portfolio-comments scrollbar">
+      </div>
+    </div>  
+  </div>
+</pre>
+<p>Comments and comment form can not be used in HTML version because it needs a CMS we desinged them for CMS developers. so if you don't need them just remove <code>.portfolio-comments-form</code> and <code>.portfolio-comments</code> elements. Another part is the head wich is containing a ptoject title and a list of description.</p>
+
+<h4>Vimeo and YouTube video</h4>
+<p>
+  Vimeo and YouTube are same all you need is an iframe of your video file which you can get by clicking on share button in YouTube and Vimeo page. Here is a sample of possible vimeo item
+</p>
+<pre>
+  <div class="portfolio-main col-md-9">
+    <!-- put your iframe here -->
+    <iframe src="//player.vimeo.com/video/46115238?autoplay=1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+</pre>
+<p>Keep the <code>width=100%</code> and also <code>Height=100%</code> properties</p>
+</section>
+
+<section id="pages9">
+          <div class="page-header">
+            <h2>How to add/edit vertical gallery</h2>
+          </div>
+          <strong>Line 391 personal.html</strong>
+          <p>
+		  Vertical gallery is the third page is personal version. it is a simple gallery with thumbnails so let's jump to markup:
+		  </p>  
+<pre>
+<div class="gal2-thumb-container">
+  <div class="gal2-thumb-carousel">
+    <img src="assets/img/gal2/thumb/19.jpg" alt="image"/>
+    <img src="assets/img/gal2/thumb/20.jpg" alt="image"/>
+    ...
+  </div>
+</div>
+<div class="gal2-images" class="lazycontainer">
+  <div class="gal2-images-wrapper" class="fullscreen-enable inner-wrapper scrollbar">
+
+      <a href="assets/img/gal2/large/18.jpg">
+        <img src="assets/img/gal2/large/18.jpg" alt="image" />
+      </a>
+      <a href="assets/img/gal2/large/19.jpg">
+        <img class="lazy" src="assets/img/blueimp-gallery/loading.gif"  data-original="assets/img/gal2/large/19.jpg" alt="img"/>  
+      </a>
+      ...
+  </div>
+</div>
+</pre>
+<p>
+first div with class <code>gal2-thumb-carousel</code> contains the thumbnails and second div with class<code>gal2-images</code> contains large images. Thumbnails are clear just add an <code>img tag with path to thumbnail image</code>
+</p>
+<p>Large images are using lazy load and also by clicking on them users will go to fullscreen slider so we need <code>a</code> tag with <code>href</code> to large image path. the rest is lazy loading just enter same path inside <code>data-original</code> attribute.</p>
+</section>
+<section id="pages10">
+          <div class="page-header">
+            <h2>How to add/edit Horizontal gallery</h2>
+          </div>
+          <strong>Line 594 personal.html</strong>
+          <p>
+      Horizontal gallery is exactly same as vertical version but just the large images are wrapped inside of a div with class <code>.gal3-item</code> here is the markup for one item:
+      </p>  
+<pre>
+<div class="gal3-item">
+  <a href="assets/img/gal3/large/12.jpg" title="Some Title">
+    <img src="assets/img/gal3/large/12.jpg" alt="image" />
+  </a>
+</div>
+</pre>
+</section>
+<section id="pages11">
+          <div class="page-header">
+            <h2>How to add/edit grid gallery</h2>
+          </div>
+          <strong>Line 494 corporate.html</strong>
+          <p>
+      Grid gallery is the third page is corporate version. it is a simple gallery with thumbnails so let's jump to markup:
+      </p>  
+<pre>
+<!-- Gallery wrapper -->
+<div id="gal1" class="masonryGrid fullscreen-enable col-5">
+
+<!-- Gallery Item -->
+  <div class="gal1-item da-item">
+    <a href="assets/img/gal1/large/01.jpg">
+      <img class="img-responsive" src="assets/img/gal1/thumb/01.jpg" alt="img" />
+
+      <!-- Gallery Overlay -->
+      <div class="da-overlay">
+        <span class="gal1-view"></span>
+      </div>
+      <!-- Gallery Overlay -->
+    </a>
+  </div>
+  <!-- /Gallery Item -->
+
+  <!-- Gallery Item -->
+  <div class="gal1-item da-item">
+    <a href="assets/img/gal1/large/02.jpg">
+      <img class="img-responsive" src="assets/img/gal1/thumb/02.jpg" alt="img" />
+
+      <!-- Gallery Overlay -->
+      <div class="da-overlay">
+        <span class="gal1-view"></span>
+      </div>
+      <!-- Gallery Overlay -->
+    </a>
+  </div>
+  <!-- /Gallery Item -->
+  ...
+</div>
+<!-- /Gallery wrapper -->
+
+</pre>
+<p>
+Each item is <code>div</code> with class <code>gal1-item da-item</code> inside the wrapper.</p>
+<p>
+  Inside each item we have an <code>a</code> tag with a <code>href</code> to the large image path  and inside it an <code>img</code> tag which is the thumbnail path. also overlay div is for mouseover effect.
+</p>
+</section>
+<section id="pages12">
+          <div section id="pages6">
+          <div class="page-header">
+            <h2>How to add/edit blog lists</h2>
+          </div>
+          <strong>Lines 1087 corporate.html and 788 personal.html</strong>
+      <p>
+        Blog post are based on masonry grid. here is the generall markup: 
+      </p>  
+<pre>
+<div id="blog-posts">
+  <!--Blog item-->
+  <div class="blog-item diary">
+  </div>
+  <!--/Blog item-->
+  
+  <!--Blog item-->
+  <div class="blog-item expo">
+  </div>
+  <!--/Blog item-->
+
+  <!--Blog item-->
+  <div class="blog-item daily">
+  </div>
+  <!--/Blog item-->
+
+  <!--Blog item-->
+  <div class="blog-item expo">
+  </div>
+  <!--/Blog item-->
+
+  <!--Blog item-->
+  <div class="blog-item diary daily">
+  </div>
+  <!--/Blog item-->
+
+</div>
+</pre>
+<p>As you see we have a div with <code>.blog-posts</code> class which is the wrapper and inside that some div with class <code>.blog-item</code> each one of this divs is a blog post</p>
+<strong>Blog posts have category filter. Each blog post belongs to atleast one category and the category name should be entered as a class like "daily" in above markup</strong>
+ </div>
+ <p>Ok now here is the markup for one single blog post</p>
+ <pre>
+  <div id="blog-posts">
+    <!--Blog item-->
+    <div class="blog-item diary">
+
+      <div class="inside">
+
+        <img src="assets/img/blog/posts/thumb/01.jpg" alt="image" class="img-responsive">
+
+        <div class="blog-item-contents">
+          <h3><a href="ajax_pages/single-post.html" class="upstream-post">Title</a></h3>
+
+          <div class="post-meta">
+            <div class="post-author"><i class="fa fa-edit"></i>Author</div>
+            <div class="post-date"><i class="fa fa-calendar"></i>Date</div>
+            <div class="post-cat"><i class="fa fa-folder"></i>Category</div>
+          </div>
+
+          <div class="post-intro">
+            Post intro
+          </div>
+          
+          <div class="post-more">
+            <a href="ajax_pages/single-post.html" class="upstream-post">read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Blog item-->          
+ </pre>
+ <p>The important tag here is</p>
+<pre>
+  <a href="ajax_pages/single-post.html" class="upstream-post"></a>
+</pre>
+  <p>Blog posts are using ajax for loading full posts content so you need to give the single post address. each blog post will need then a single html like "single-post.html" containing full posts and comment form and comments.</p>
+
+ <h3>Blog Categories</h3>
+ <p>as mentioned eariler blog posts are filterable. category filters are inside side bar of blog section. here is the markup:
+ <pre>
+   <div class="sub-page swiper-slide" data-hash="blog">
+      <div class="page-side">
+        <div class="inner-wrapper scrollbar">
+
+          ...
+            <h3>Categories</h3>
+            <ul id="blog-filters">
+              <li class="active-cat"><a href="#" data-filter="*">all</a></li>
+              <li><a href="#" data-filter=".expo">My Expo</a></li>
+              <li><a href="#" data-filter=".diary">Diary</a></li>
+              <li><a href="#" data-filter=".daily">Daily Photo</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+ </pre>
+ <p>Categories is a unordered list, each li is a category and has a <code>data-filter</code> attribute which must be same as category name like "daily" that we used in blog post.</p>
+
+ <h3>What about load more?</h3>
+ <p>This part has been designed for CMS developers in fact and should use an ajax call to fetch more posts from database. so if you want dont need it just hide the load more button you can do this by editing "style.css" file at line 1371:</p>
+ <pre>
+#blog-more{
+  box-shadow: 0 0 8px -1px #000;
+  background-color: #141516;
+  display: block;
+  text-align: center;
+  padding: 50px 15%;
+  margin:20px 0 40px 0;
+  font-size: 22px;
+  color: #DDD;
+}
+just add a <code>display:none;</code> to above code.
+ <pre>
+ </section>
+
+<section id="pages13">
+          <div class="page-header">
+            <h2>How to edit About me</h2>
+          </div>
+          <strong>Line 1002 personal.html</strong>
+          <p>
+          About me page has a different layout. There is a slider and a main part. here is the markup:
+		  </p>  
+<pre>
+<div class="sub-page swiper-slide" data-hash="about-me">
+  <div class="about-side no-overflow col-md-5 col-sm-6 hidden-xs">
+  </div>
+    
+  <div class="about-contents col-md-7 col-sm-6">
+  </div>
+</div>
+</pre>
+<p>
+  First div is the slider container and second one is contens wrapper.
+</p>
+<strong>So how to add/edit slider images?</strong>
+<p>the markup:</p>
+<pre>
+  <div class="about-side no-overflow col-md-5 col-sm-6 hidden-xs">
+    <div id="about-slides">
+      <img src="assets/img/aboutme/05.jpg" alt="Photo">
+      <img src="assets/img/aboutme/06.jpg" alt="Photo">
+      <img src="assets/img/aboutme/07.jpg" alt="Photo">
+      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-angle-left"></i></a>
+      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+</pre>
+<p>You just need to edit the src attribute of <code>img</code> tag and give it the path to you image. The two <code>a</code> tag are responsible for next and prev in slider.</p>
+<h3>About me contents</h3>
+		<p>
+    The markup is:
+		</p>
+    <pre>
+      <div class="about-contents col-md-7 col-sm-6">
+        <div class="inner-wrapper scrollbar">
+
+          <div class="sub-page-title">
+            <h2 class="mycontainer ">Erica Franklin</h2>
+          </div>
+
+          <div class="contents">
+            <div class="mycontainer">
+              <div class="row">
+                <div class="col-md-9">
+                  <h3>Basic Info</h3>
+                  <ul class="list-items">
+                    <li>
+                      <div class="list-label">Birth</div>
+                      <div class="list-des">Oct 1980</div>
+                    </li>
+                    <li>
+                      <div class="list-label">Lives in</div>
+                      <div class="list-des">New York, US</div>
+                    </li>
+                    ...
+                  </ul>
+                  <p>Description</p>
+                </div>
+                <div class="col-md-3">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </pre>
+    <p>div with <code>.sub-page-title</code> is acting like a page title and also is your name. also inside div with class <code>.contents</code> There is list like the one we had in vertical portfolio just add lable and description to <code>list-label</code> and <code>list-des</code></p>
+</section>
+<section id="pages14">
+          <div class="page-header">
+            <h2>How to add/edit Team members</h2>
+          </div>
+          <strong>Line 837 corporate.html</strong>
+          <p>
+          Team members page has a different layout. There are two carousel, one for the images and the other for each memmber information. Here is the markup for image carousel:
+      </p>  
+<pre>
+<!-- Team Image Carousel Wrapper -->
+  <div class="team-image-wrapper">
+    
+    <!-- Team Item -->
+    <div class="item">
+      <img src="assets/img/team/team1.jpg" alt="">  
+    </div>
+    <!-- /Team Item -->
+
+    <!-- Team Item -->
+    <div class="item">
+      <img src="assets/img/team/team2.jpg" alt="">  
+    </div>
+    <!-- /Team Item -->
+
+    <!-- Team Item -->
+    <div class="item">
+      <img src="assets/img/team/team3.jpg" alt="">  
+    </div>
+    <!-- /Team Item -->
+
+    <!-- Team Item -->
+    <div class="item">
+      <img src="assets/img/team/team4.jpg" alt="">  
+    </div>
+    <!-- /Team Item -->
+  </div>
+  <!-- Team Image Carousel Wrapper -->
+</pre>
+<p>Pretty much simple just add a <code>div</code> with class<code>.item</code> containing an <code>img</code> tag inside the wrapper. <code>img</code> src should be the path to team member image.</p>
+<h3>Team contents carousel</h3>
+    <p>
+    The general markup is like image carousel just some <code>div</code> with class <code>item</code> so let's take a look at one item markup:
+    </p>
+    <pre>
+    <!-- Team Item -->
+<div class="item">
+  <div class="item-wrapper">
+
+    <!-- Team Item Title-->
+    <h3 class="team-title">First name<span>Last name</span></h3>
+    <!-- /Team Item Title-->
+
+    <!-- Team Item Informations-->
+    <div class="info">
+
+      <!-- Team Item Description-->
+      <div class="description">
+        <p>Description</p>
+      </div>
+      <!-- /Team Item Description-->
+
+      <!-- Team Item Social Icons-->
+      <ul class="social-icons">
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+      <!-- /Team Item Social Icons-->
+
+    <!-- /Team Item Informations-->
+    </div>
+
+  </div>
+</div>
+<!-- /Team Item -->
+  
+    </pre>
+    <p>First element is the name and last name following by a short description. Additionally we have a social icons which is an unordered list. Each <code>li</code> is a social icon and has a class like <code>fa-facebook</code></p>
+    <p>
+       Our social icons and all other icons are using Font awesome icon package. You can see all available icons in <a href="http://fortawesome.github.io/Font-Awesome/icons/">here</a>.Just select your desired icon class and put it inside <code>i</code> tag class.
+    </p>
+</section>
+
+<section id="pages15">
+          <div class="page-header">
+            <h2>How to add/edit google map</h2>
+          </div>
+          <strong>Line 1342 corporate.html and 1121 personal.html</strong>
+          <p>
+        Google map is totally being handled by javascript using gmap3 plugin so in markup we just have a <code>div</code> with a unique ID like this
+      </p>
+<pre>
+<div id="contact-right">
+  <div  id="gmap-container">
+    <div id="gmap" class="swiper-no-swiping"></div>
+  </div>
+</div>
+</pre>
+<p>Nothing much to do here so <strong>How to change the map address?</strong> open custom.js file and arround line 1374 you should see this:
+</p>
+<pre>
+  overlay:{
+    //Edit following line and enter your own address
+    address: "Footscray VIC 3011 Australia",
+    options:{
+      content: '<div id="map-marker"><i class="fa fa-map-marker"></i></div>',
+      offset:{
+        y:-65,
+        x:-20
+      }
+    }
+</pre> 
+<p>Just change the address with your own and for more information about this plugin's options please visit <a href="http://gmap3.net">Gmap3 site</a>
+</p>    
+</section>        
+
+
+<section id="pages16">
+          <div class="page-header">
+            <h2>How to edit contact details</h2>
+          </div>
+          <strong>Line 1309 corporate.html and 1088 personal.html</strong>
+          <p>
+		  Contact details are nothing more but an unordered list . Here is the markup:
+		  </p>  
+<pre>
+<!--Contact details-->
+  <ul class="contact-details">
+    <li><span>Address:</span> 1234 Some Street, Fancytown, UK</li>
+    <li><span>Phone:</span> 123 456 7890</li>
+    <li><span>Email:</span> email@yoursite.com</li>
+  </ul>
+<!--Contact details-->
+</pre>
+</section>
+
+<section id="pages17">
+          <div class="page-header">
+            <h2>Contact form</h2>
+          </div>
+          <strong>Line 1319 corporate.html and 1098 personal.html</strong>
+          <p>
+		  Contact form is using an ajax and also a PHP file.  Most important change is entering you email address which is located in contact.php file around line 11  you will find this:
+		  </p>  
+<pre>
+$emailTo = 'owwwlab@gmail.com';
+</pre>
+		<strong>Your emails might be spammed depends on your server so when checking email please also check spam folder.</strong>
+		<h3>
+			Contact form validation
+		</h3>
+		<p>
+			As you might find out by now we are using some validations on submitting contact form so we have two class of validation <code>required </code> and <code>email</code> class. First one check that user should enter something in the input field and the second one is for checking users email.
+This is our markup for one single input field which is for email :
+		</p>
+<pre>
+	 <input type="email" class="form-control requiredField email" id="contact-email" placeholder="Email">
+</pre>
+		<p>
+			Notice that we have added two classes to this element so users should enter something in this field and also a valid email address.
+The other thing which you might be need of changing them is contact form alerts. You can find them in "custom.js" file in "js" folder around line 1426.
+		</p>
+</section>
+
+<section id="pages18">
+          <div class="page-header">
+            <h2>Update from 2.3 to 2.4</h2>
+            <p>Changed files are assets/css/style.css and assets/js/custom.js. Please check the <a href="assets/reports/css-2.3-2.4.htm">CSS file difference</a> and <a href="assets/reports/js-2.3-2.4.htm">JS file difference</a> reports for exact changed lines</p>
+            <h2>Update from 2.2 to 2.3</h2>
+          </div>
+          <strong>HTML files</strong>
+          <p>
+      IE9 emulator meta tag has been removed. Find following lines in your HTML file and delete it:
+      </p>  
+<pre>
+  <!-- fix for IE10 ajax problem -->
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+  <meta http-equiv="x-ua-compatible" content="IE=9">
+  <!-- /fix for IE10 ajax problem -->
+</pre>
+
+<strong>JavaScript File</strong>
+<p>There has been some modification in "assets/js/custom.js" file.</p>
+<p>Find following function and completly replace it with the updated function that is available in v2.3 (Line 53-114)</p>
+<pre>
+  /*click custom event
+ This is a custom event to distinguish between 
+ mouse drag and mouse click
+----------------------------------------------*/
+var cces,cce={
+  settings:{
+    clickFlag : 1,
+    targetEls : '.fullscreen-enable a, a.upstream-post, a.ajax-portfolio'
+  },
+  init: function(){
+    cces = this.settings;
+    this.bindUIActions();
+  },
+  bindUIActions: function(){
+    $body = $("body");
+    var pStart=0,pDiff=0;
+    $body.on('mousedown touchstart', cces.targetEls ,function(e){
+      pStart=e.pageX;
+    });
+
+    $body.on('click', cces.targetEls, function(e){
+      e.preventDefault();
+    });
+
+    $body.on('mouseup touchend', cces.targetEls, function(e){
+       pDiff=Math.abs(e.pageX-pStart);
+       if(pDiff<5){
+        $(this).trigger('cs-click');   
+       }
+    });
+
+    //IE shit stuffs
+    var bindEvent = function(element, type, handler) {
+        if (element.addEventListener) {
+            element.addEventListener(type, handler, false);
+        } else {
+            element.attachEvent('on'+type, handler);
+        }
+    }
+
+    var elements=$('.fullscreen-enable a ,a.upstream-post, a.ajax-portfolio');
+
+    elements.each(function(){
+        bindEvent(this,'pointerdown',pdown);
+        bindEvent(this,'pointerup',pup);
+    });
+
+    function pdown(){
+      $(this).trigger('mousedown');
+    }
+
+    function pup(){
+      $(this).trigger('mouseup');
+    }
+    
+    
+  }
+}
+cce.init();
+</pre>
+
+<p><strong>This should be changed to </strong></p>
+<pre>
+  /*click custom event
+ This is a custom event to distinguish between 
+ mouse drag and mouse click
+----------------------------------------------*/
+var cces,cce={
+  settings:{
+    clickFlag : 1,
+    targetEls : '.fullscreen-enable a, a.upstream-post, a.ajax-portfolio'
+  },
+  init: function(){
+    cces = this.settings;
+    this.bindUIActions();
+  },
+  bindUIActions: function(){
+    $body = $("body");
+    var pStart=0,pDiff=0;
+    var pEnd=0,ieStart=0,ieEnd=0;
+    $body.on('mousedown touchstart', cces.targetEls ,function(e){
+      (e.pageX)?pStart=e.pageX:(pStart=ieStart);
+    });
+
+    $body.on('click', cces.targetEls, function(e){
+      e.preventDefault();
+    });
+
+    $body.on('mouseup touchend', cces.targetEls, function(e){
+      (e.pageX)?pEnd=e.pageX:(pEnd=ieEnd);
+       pDiff=Math.abs(pEnd-pStart);
+       if(pDiff<5){
+        $(this).trigger('cs-click');   
+       }
+    });
+
+    //IE shit stuffs
+    var bindEvent = function(element, type, handler) {
+        if (element.addEventListener) {
+            element.addEventListener(type, handler, false);
+        } else {
+            element.attachEvent('on'+type, handler);
+        }
+    }
+
+    var elements=$('.fullscreen-enable a ,a.upstream-post, a.ajax-portfolio');
+
+    elements.each(function(){
+        bindEvent(this,'pointerdown',pdown);
+        bindEvent(this,'pointerup',pup);
+    });
+
+    function pdown(e){
+      ieStart=e.pageX;
+      $(this).trigger('mousedown');
+      
+    }
+
+    function pup(e){
+      ieEnd=e.pageX;
+      $(this).trigger('mouseup');
+    }
+  }
+}
+cce.init();
+
+
+</pre>
+
+<p><strong>Video backgrounds preload option</strong></p>
+<p>In custom.js file There is two function which you must edit. "videoBackground" and "videoPortfolio". Find following code in this two function:
+<pre>
+  loop: true,
+</pre>
+<p>And replace it with following code:</p>
+<pre>
+  loop: true,
+  preload:'auto',
+</pre>
+</section>
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38170379-1']);
+  _gaq.push(['_setDomainName', 'pyrocms.ir']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

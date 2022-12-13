@@ -1,0 +1,22 @@
+{
+  "name": "vida-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owwwlab/vida-html-template.git"
+  },
+  "author": "Alireza Jahandideh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/owwwlab/vida-html-template/issues"
+  },
+  "homepage": "https://github.com/owwwlab/vida-html-template#readme",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

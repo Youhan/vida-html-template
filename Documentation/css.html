@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Custom Skins - Vida documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    
+    
+    
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    
+    <script src="assets/js/jquery.js"></script> 
+    <script>
+            
+            $(document).ready(function(){
+                
+                $('pre').each(function(){
+                   var $pre = $(this);
+                   $pre.addClass('prettyprint linenums');
+                   $pre.html($pre.html().replace(/</g, '&lt;').replace(/>/g, '&gt;'));
+                });
+            });
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <div class="motive">
+      <h4>Your review matters!</h4>
+      <p>Would you please let us know what you think about Vida?</p>
+      <img src="assets/img/stars.png" alt="">
+      <a href="http://themeforest.net/downloads" target="_blank" class="btn btn-info btn-lg">Sure :)</a>
+    </div>
+    
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li >
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./html.html">HTML Markup </a>
+              </li>
+              <li >
+                <a href="./howto.html">How to questions </a>
+              </li>
+              <li class="active">
+                <a href="./css.html">Custom skins</a>
+              </li >
+        <li>
+                <a href="./plugins.html">Javascript plugins </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>Skins</h1>
+    <p class="lead">Choose diffeent skin or add a new one</p>
+  </div>
+</header>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <section id="backgrounds">
+        <h2>Change the skin</h2>
+		<p>We have 3 pre defined skin. To change the default skin all you need to edit html file.in both corporate.html and personal.html at line 16:
+</p>
+<pre>
+ <link rel="stylesheet" type="text/css" href="assets/css/skins/skin3/style.css">
+</pre>
+		<p>
+		  Each one of styles has a css file located in "assets/css/skins". currently you have three option either use skin2 or skin3 in above line or just delete it and you will have the default blue skin.
+    </p>
+    <p>Supppose we want to change to red.css we need to open red.css file and pick the color which is #d02b2b in this case and enter it in <code>barColor</code> </p>
+
+<br><br>
+<h2>Add new skin </h2>
+<p>You can have your own colors these 3 predefined are just some examples and we will als add some more in next versions. to add a new one just copy and paste "skin3" folder and let's name it "skin4" . here we have a main color which is #272822 for our elements you can change all occurence of it with your own color but then you need to sync the other colors too</p>
+
+<strong>Notice:</strong>
+<p>Team carousel section has different color for different items but all colors all from a same range. We used javascript to generate some colors in a same range based on an input color. that main color is at line 178 of "style.css" in skins folder. here is from skin3 </p>
+<pre>
+  .team-container .team-carousel-wrapper,
+  .team-container .team-carousel .item{
+    background: #272822;
+  }
+</pre>
+<p>You need to set this color based on your main color.</p>
+<strong>Notice:</strong>
+<p>There is one image which is belong to menu trigger button you need to give it your main color we included the PSD file of this image so you can easily change the color.</p>
+        </section>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38170379-1']);
+  _gaq.push(['_setDomainName', 'pyrocms.ir']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+  </body>
+</html>
