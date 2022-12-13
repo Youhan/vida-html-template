@@ -1,0 +1,67 @@
+version 1.0 : 1/30/2014
+------------------------------------------------
+Initial release
+
+
+version 1.1 : 2/31/2014
+------------------------------------------------
+ - kenburn slider fixed (js,css,html change)
+ - blog lauout fixed (js change)
+ - lazy loading of vertical and horizontal gallery fixed (css change)
+ - added a hover icon on vertical gallery (html and css change)
+ - scrolling bug fixed (css change)
+ - improvements on responsiveness
+
+ version 1.2  05/02/2014
+ ------------------------------------------------
+  - Documentation updated
+  - kenburn slide fixed
+  - IE sweep and click fixed
+  - Firefox menu fixed
+  - Grid portfolio and grid gallery IE fixed
+  - Ajax behaviour enhanced 
+  - Grid gallery zoom fixed 
+  - Vertical and horizontal thumbnails mouse interaction improved
+  - Images in the package are all place-holders, so you can just change images to setup is faster
+  - Grid gallery and Grid portfolio markup fixed
+
+
+Version 2.0  13/02/2014
+-------------------------------------------------
+ - scroll horizontally and vertically by swipe in touch devices
+ - transition of menu on page swipe
+ - More accurate preloader	
+ - improvments in responsiveness behavior
+ - Firefox 3d overlay fix
+ - Team members carousel updated
+ - About me image slider updated
+ - Multiple galleries issue fixed
+
+version 2.1 16/04/2014
+-------------------------------------------------
+- Audio player playlist 1 item bug fixed
+- Upstream click handler enhanced
+- navbar indicator fixed
+
+version 2.2 16/05/2014
+-------------------------------------------------
+- Showing instruction page is now optional
+- Fullscreen video fallback for IOS
+- Use Native scrollbar in touch devices
+- Fullscreen state in Iphone (hide Safari UI)
+- Enhaced menu behavior in IOS
+- Minor responsive issues fixed
+
+version 2.3 25/07/2014 
+(Update instruction is included in documentation at the end of howto.html file)
+-------------------------------------------------
+-Fixed layout issue in IE
+-Added preload option for video backgrounds
+
+version 2.4 30/10/2014
+(Update instruction is included in documentation at the end of howto.html file)
+-------------------------------------------------
+-Fixed contact form inputs text-align
+-Fixed Team carousel in animation click
+-Fixed some minor CSS styles
+
